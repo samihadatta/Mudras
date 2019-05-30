@@ -25,7 +25,8 @@ class MainViewController: UICollectionViewController {
 
         // Do any additional setup after loading the view.
         // Set up a 2-column Collection View
-        let width = view.frame.size.width / 2
+        let width = (view.frame.size.width-10) / 2
+//        let width = 200
         let layout = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width:width, height:width)
         layout.sectionHeadersPinToVisibleBounds = true
